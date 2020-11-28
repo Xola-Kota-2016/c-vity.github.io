@@ -1,12 +1,12 @@
 
 @keyframes bg-animate {
   0%   {background-color: red;}
-  30%  {background-color: black}
+  30%  {background-color:indigo;}
   45%  {background-color: blue;}
   55%  {background-color: violet;}
   65%  {background-color: green;}
   75%  {background-colo: yellow;}
-  85%  {background-color: indigo;}
+  85%  {background-color: black;}
   95%  {background-color: maroon;}
 }
 
