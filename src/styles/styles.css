@@ -1,0 +1,31 @@
+
+@keyframes bg-animate {
+  0%   {background-color: red;}
+  30%  {background-color: black}
+  45%  {background-color: blue;}
+  55%  {background-color: violet;}
+  65%  {background-color: green;}
+  75%  {background-colo: yellow;}
+  85%  {background-color: indigo;}
+  95%  {background-color: maroon;}
+}
+
+body {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  animation-name: bg-animate;
+  animation-duration: 20s; 
+  animation-iteration-count: infinite;
+}
+
+h1,p {
+    color: white;
+}
+
+.center {
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+}
