@@ -11,10 +11,27 @@
 
 
 <body>
-    
+
+    <div class="cursor"></div>
+    <script>
+        const cursor = document.querySelector('.cursor');
+
+        document.addEventListener('mousemove', e => {
+            cursor.setAttribute("style", "top: " + (e.pageY - 10) + "px; left: " + (e.pageX - 10) + "px;")
+        })
+
+        document.addEventListener('click', () => {
+            cursor.classList.add("expand");
+
+            setTimeout(() => {
+                cursor.classList.remove("expand");
+            }, 500)
+        })
+    </script>
 
     <div class="wrapper">
-        <button class="button" onclick="window.open('https://forms.gle/YGToT1U2zPD3mZbPA')" ><span>Make My CV</span></button>
+        <button class="button" onclick="window.open('https://forms.gle/YGToT1U2zPD3mZbPA')"><span>Make My
+                CV</span></button>
     </div>
 
 
